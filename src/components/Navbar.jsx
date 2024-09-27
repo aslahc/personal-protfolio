@@ -2,45 +2,28 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-black p-4 font-['Poppins', sans-serif]">
-      <div className="container mx-auto flex justify-between items-center">
-        <a href="/" className="text-white font-bold text-xl">
-          aslah
+    <nav className="bg-white w-full mx-4 md:w-7/12 h-20 rounded-lg sticky top-4 mx-auto flex items-center px-4 shadow-md z-50 ">
+      {/* Left Side (Aslah) */}
+      <h1 className="text-black text-2xl pl-5 fredoka-navbar flex-grow text-left cursor-pointer">
+        aslah
+      </h1>
+
+      {/* Right Side (Home and Contact) */}
+      <div className="flex space-x-6 pr-6">
+        <a
+          href="#home"
+          className="text-black text-lg fredoka-navbar cursor-pointer hover:text-green-500 transition duration-200"
+          aria-label="Home"
+        >
+          Home
         </a>
-        <ul className="flex space-x-6">
-          <li>
-            <a
-              href="#about"
-              className="text-white hover:text-green-400 transition-colors duration-300"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              className="text-white hover:text-green-400 transition-colors duration-300"
-            >
-              Skills
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className="text-white hover:text-green-400 transition-colors duration-300"
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="text-white hover:text-green-400 transition-colors duration-300"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        <a
+          href="#contact"
+          className="text-black text-lg fredoka-navbar cursor-pointer hover:text-green-500 transition duration-200"
+          aria-label="Contact"
+        >
+          Contact
+        </a>
       </div>
     </nav>
   );
